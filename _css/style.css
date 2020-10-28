@@ -70,12 +70,22 @@ section.cover-form{
 	font-size: 13px;
 	color: #525252;
 }
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+}
 .form-container form input[type=text],input[type=number],input[type=email]{
 	width: 96%;
 	border: 1px solid #ccc;
 	height: 45px;
 	line-height: 45px;
 	padding-left: 10px;
+}
+.form-container form input[type=text]:hover,input[type=number]:hover,input[type=email]:hover{
+	border: 2px solid #ccc;;
 }
 .form-wraper:not(:first-child){
 	margin-top: 25px;
@@ -89,9 +99,13 @@ section.cover-form{
 	color: white;
 	width: 96%;
 	height: 50px;
-	font-size: 25px;
+	font-size: 20px;
 	cursor: pointer;
 	border:0;
+	font-weight: lighter;
+}
+.form-container form input[type=submit]:hover{
+	background-color: black;
 }
 div.icone{
 	position: absolute;
@@ -119,11 +133,11 @@ section.chamada h2{
 	width: 96%;
 	display: inline-block;
 	color: white;
-	font-size: 30px;
+	font-size: 26px;
 	font-weight: normal;
 }
 section.chamada p{
-	font-size: 24px;
+	font-size: 20px;
 	font-family: tahoma;
 	color: white;
 	display: inline-block;		
